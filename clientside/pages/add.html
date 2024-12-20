@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Registration Form</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <h1>Car Registration</h1>
+        </div>
+    </div>
+    <div class="right">
+        <a href="../index.html"><button>Home</button></a>
+    </div>
+    <div class="add-container">
+        <form action="#">
+            <!-- First Row: Car Name and Brand -->
+            <div class="input-row">
+                <div class="input-item">
+                    <label for="car-name">Car Name</label>
+                    <input type="text" id="car-name" name="car-name" placeholder="Enter car name" required>
+                </div>
+                <div class="input-item">
+                    <label for="brand">Brand</label>
+                    <select name="brand" id="brand" required>
+                        <option value="" disabled selected>Select Brand</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes">Mercedes</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Second Row: Engine Capacity (CC) and Fuel Type -->
+            <div class="input-row">
+                <div class="input-item">
+                    <label for="cc">Engine Capacity (CC)</label>
+                    <select name="cc" id="cc" required>
+                        <option value="" disabled selected>Select Engine Capacity</option>
+                        <option value="10-20">10-20 CC</option>
+                        <option value="20-30">20-30 CC</option>
+                        <option value="30-40">30-40 CC</option>
+                        <option value="40-50">40-50 CC</option>
+                    </select>
+                </div>
+                <div class="input-item">
+                    <label for="fuel-type">Fuel Type</label>
+                    <select name="fuel-type" id="fuel-type" required>
+                        <option value="" disabled selected>Select Fuel Type</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Third Row: Mileage and Color -->
+            <div class="input-row">
+                <div class="input-item">
+                    <label for="mileage">Mileage</label>
+                    <select name="mileage" id="mileage" required>
+                        <option value="" disabled selected>Select Mileage</option>
+                        <option value="0-10">0-10 km/l</option>
+                        <option value="10-20">10-20 km/l</option>
+                        <option value="20-30">20-30 km/l</option>
+                        <option value="30-40">30-40 km/l</option>
+                    </select>
+                </div>
+                <div class="input-item">
+                    <label for="color">Color</label>
+                    <select name="color" id="color" required>
+                        <option value="" disabled selected>Select Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Fourth Row: Seat Type -->
+            <div class="input-row">
+                <div class="input-item">
+                    <label for="seat-type">Seat Type</label>
+                    <select name="seat-type" id="seat-type" required>
+                        <option value="" disabled selected>Select Seat Type</option>
+                        <option value="Leather">Leather</option>
+                        <option value="Fabric">Fabric</option>
+                        <option value="Vinyl">Vinyl</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-item">
+                    <label for="profile-photo">Profile-Photo</label>
+                    <input type="file" name="profile-photo" id="profile-photo">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-item" id="display-photo">
+                    
+                </div>
+            </div>
+
+            <button type="submit">Register Car</button>
+        </form>
+    </div>
+</body>
+</html>
